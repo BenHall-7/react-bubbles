@@ -64,7 +64,7 @@ const ColorList = ({ colors, updateColors }) => {
       }}>New Color</button>
       {editing && (
         <form onSubmit={saveEdit}>
-          <legend>edit color</legend>
+          <legend>{colorToEdit.id ? "edit color" : "add color"}</legend>
           <label>
             color name:
             <input
